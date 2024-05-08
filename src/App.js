@@ -1,6 +1,6 @@
 import './App.css';
 import pink_flask from './assets/pink-flask.jpg';
-import logo from './assets/gym_nut_blue.png'
+import logo from './assets/gym_nut.png'
 import vid from './assets/exercise_vid.mp4'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       
       {/* Nav header that overlays and transparent */}
-      <div className='header flex-row align-space-around'>
+      <div className='header flex-row jcontent-space-around aitems-center'>
         <button className='button'>About</button>
         <img src={logo} className="logo" />
         <button className='button'>Bag</button>

@@ -3,6 +3,7 @@
 }
 .header {
   position: fixed;
+  top: -2rem;
   margin: 2rem;
   width: 100vw;
 }
@@ -16,9 +17,15 @@
   display: flex;
   flex-direction: column;
 }
-.align-space-around{
+
+.jcontent-space-around {
   justify-content: space-around;
 }
+
+.aitems-center {
+  align-items: center;
+}
+
 
 .logo {
   width: 7rem;
