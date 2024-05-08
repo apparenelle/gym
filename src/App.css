@@ -1,3 +1,75 @@
 .App {
   text-align: center;
 }
+.header {
+  position: fixed;
+  margin: 2rem;
+  width: 100vw;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-space-around{
+  justify-content: space-around;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.button {
+  width: 7rem;
+  border-radius: 1.5rem;
+  height: 4rem;
+  background-color: rgba(128, 128, 128, 0.7); /* Grey background with 50% transparency */
+  color: black; /* Text color */
+  border: none; /* No border */
+  transition: background-color 0.3s;
+  /* transition: color 0.4s; */
+}
+
+.button:hover {
+  background-color: rgba(128, 128, 128, 1);
+  /* color: white; */
+}
+
+
+
+
+.video-background {
+  z-index: -1;
+  position: relative;
+  width: 100vw; /* Adjust the width as needed */
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Centers the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+}
+
+.video-background video {
+  /* aspect-ratio: 16/9; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* transform: translate(-50%, -50%); */
+  z-index: -1; /* Keep the video behind the content */
+  object-fit: cover;
+}
+
+.video-background .content {
+  position: relative;
+  z-index: 1; /* Ensures content is on top of the video */
+  color: white; /* Makes text visible against a potentially dark video background */
+  text-align: center; /* Center the text within the div */
+  padding-top: 20%; /* Adjust padding to position your text */
+}
