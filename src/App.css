@@ -4,7 +4,7 @@
 .header {
   position: fixed;
   top: -2rem;
-  margin: 2rem;
+  margin: 3.5rem;
   width: 100vw;
 }
 
@@ -22,21 +22,32 @@
   justify-content: space-around;
 }
 
+.jcontent-center {
+  justify-content: center;
+}
+
 .aitems-center {
   align-items: center;
 }
 
 
-.logo {
+/* .logo {
   width: 7rem;
+} */
+
+.logo {
+  font-size: large;
+  color: whitesmoke;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .button {
   width: 7rem;
   border-radius: 1.5rem;
   height: 4rem;
-  background-color: rgba(128, 128, 128, 0.7); /* Grey background with 50% transparency */
-  color: black; /* Text color */
+  background-color: rgba(128, 128, 128, 0.7); 
+  /* background-color: black; */
+  color: white; /* Text color */
   border: none; /* No border */
   transition: background-color 0.3s;
   /* transition: color 0.4s; */
@@ -80,3 +91,10 @@
   text-align: center; /* Center the text within the div */
   padding-top: 20%; /* Adjust padding to position your text */
 }
+
+.panel1 {
+  background-color: bisque;
+  height: 5rem;
+}
+
+
