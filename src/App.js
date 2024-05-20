@@ -6,7 +6,6 @@ import vid from './assets/exercise_vid.mp4'
 import ShopItem from './ShopItem.js';
 
 
-
 function App() {
   
   return (
@@ -20,11 +19,11 @@ function App() {
         <button className='button'>Bag</button>
       </div>
 
-      <div class="video-background">
+      <div className="video-background">
         <video autoPlay loop muted playsInline>
             <source src={vid} type="video/mp4" />
         </video>
-        <div class="content">
+        <div className="content">
             {/* <h1>Welcome to My Website</h1>
             <p>Here is some introductory text.</p> */}
         </div>
