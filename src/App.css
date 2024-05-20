@@ -1,6 +1,12 @@
+/* body {
+  min-width: 175px;
+  overflow: scroll;
+} */
+
 .App {
   text-align: center;
 }
+
 .header {
   position: fixed;
   top: -2rem;
@@ -8,41 +14,7 @@
   width: 100vw;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.jcontent-space-around {
-  justify-content: space-around;
-}
-
-.jcontent-space-between {
-  justify-content: space-between;
-}
-
-.jcontent-center {
-  justify-content: center;
-}
-
-.aitems-center {
-  align-items: center;
-}
-
-.aitems-start {
-  align-items: flex-start;
-}
-
-
-.flex-grow-1 {
-  flex-grow: 1;
-}
 
 .logo {
   width: 7rem;

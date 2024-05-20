@@ -1,10 +1,11 @@
 import './App.css';
-import shopItem from './ShopItem.js';
+import './flex.css';
 import pink_flask from './assets/pink_flask.png';
 import logo from './assets/gymhut2.png'
 import vid from './assets/exercise_vid.mp4'
-
 import ShopItem from './ShopItem.js';
+
+
 
 function App() {
   

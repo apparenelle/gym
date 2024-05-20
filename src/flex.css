@@ -1,0 +1,39 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jcontent-space-around {
+    justify-content: space-around;
+  }
+  
+  .jcontent-space-between {
+    justify-content: space-between;
+  }
+  
+  .jcontent-center {
+    justify-content: center;
+  }
+  
+  .aitems-center {
+    align-items: center;
+  }
+  
+  .aitems-start {
+    align-items: flex-start;
+  }
+  
+  
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .flex-shrink-1 {
+    flex-shrink: 1;
+  }
