@@ -33,7 +33,19 @@
   .flex-grow-1 {
     flex-grow: 1;
   }
-  
+
+  .flex-grow-9 {
+    flex-grow: 9;
+  }
+
   .flex-shrink-1 {
     flex-shrink: 1;
+  }
+
+  .flex-shrink-9 {
+    flex-shrink: 9;
+  }
+
+  .z-index-1{
+    z-index: 1;
   }
