@@ -3,7 +3,7 @@ import pink_flask from './assets/pink_flask.png';
 import action_shot from './assets/action_shot.jpg';
 import './ShopItem.css';
 
-export default function ShopItem(props) {
+export default function ShopItem({key, addToCart}) {
     const name = "Hydroflask";
     const cost = 44;
     const colors = ["pink", "green", "blue"];
@@ -26,7 +26,7 @@ export default function ShopItem(props) {
             className={`shop-item flex-row jcontent-center flex-grow-1  ${isHovered ? 'hovered' : ''}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            key={props.key}
+            key={key}
         >
             {!isHovered ? (
                 <div className="item-info item-wrapper flex-column">
@@ -61,7 +61,7 @@ export default function ShopItem(props) {
                     />
                     <button 
                         className="add-to-cart flex-grow-1 flex-shrink-1" 
-                        onClick={() => console.log(`${name} added to cart`)}
+                        onClick={() => {addToCart([key, name, cost]);console.log(`${name} added to cart`)}}
                         // aria-label={`Add ${name} to cart`}
                     >
                         QUICK ADD

@@ -8,40 +8,15 @@
   z-index: 0;
 }
 
-.header {
-  position: fixed;
-  top: -2rem;
-  margin-top: 3.5rem;
-  width: 100vw;
-  z-index: 2;
-}
-
-
-
-.logo {
-  width: 7rem;
-}
-
-
-
 .button {
-  width: 7rem;
-  border-radius: 1.5rem;
+  width: 9rem;
+  border-radius: .5rem;
   height: 4rem;
   background-color: rgba(128, 128, 128, 0.7); 
-  /* background-color: black; */
   color: white; /* Text color */
   border: none; /* No border */
   transition: background-color 0.3s;
-  /* transition: color 0.4s; */
 }
-
-.button:hover {
-  background-color: rgba(128, 128, 128, 1);
-  /* color: white; */
-}
-
-
 
 
 .video-background {

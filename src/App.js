@@ -1,20 +1,36 @@
+import {useEffect, useRef, useState} from "react";
 import './App.css';
 import './flex.css';
 import pink_flask from './assets/pink_flask.png';
-import logo from './assets/gymhut2.png'
 import vid from './assets/exercise_vid.mp4'
+import Header from './Header.js';
 import ShopItem from './ShopItem.js';
 
+
 function App() {
+  const shopTopRef = useRef();
+  const [itemsInBag, setItemsInBag] = useState([]);
+  const [bagOpen, setBagOpen] = useState(false);
+
+
+
+  const setBagItems = (item) => {
+    setItemsInBag([...itemsInBag, item]);
+    console.log(`bag is ${itemsInBag}`);
+  };
+
+  const scrollToGear = () => {
+    window.scrollTo({
+      top:shopTopRef.current.offsetTop,
+      behavior: 'smooth'
+    });
+  };
+  
+  
   return (
     <div className="App flex-column">
       {/* Nav header that overlays and transparent */}
-      <div className='header flex-row jcontent-space-around aitems-center'>
-        <button className='button'>About</button>
-        {/* <h3 className='logo'>GYM NUT</h3> */}
-        <img src={logo} className="logo" />
-        <button className='button'>Bag</button>
-      </div>
+      <Header handleBagClick={ setBagOpen } isOpen={bagOpen} items={itemsInBag}/>
 
       <div className="video-background">
         <video autoPlay loop muted playsInline>
@@ -24,7 +40,7 @@ function App() {
             <h1>Assessments Available</h1>
             <div className='flex-row jcontent-space-around'>
               <button className='button'>Need a trainer</button>
-              <button className='button'>Want some gear</button>
+              <button className='button' onClick={scrollToGear}>Want some gear</button>
             </div>
             {/* <p>Here is some introductory text.</p> */}
         </div>
@@ -32,6 +48,7 @@ function App() {
       
       <div 
         className='panel1 flex-row jcontent-space-around aitems-center'
+        ref={shopTopRef}
       >
         <p>Just Do It.</p>
         <p>Find the new you.</p>
@@ -42,12 +59,12 @@ function App() {
         className='flex-column'
       >
         <div className='flex-row'>
-          <ShopItem key={1}/>
-          <ShopItem key={2}/> 
+          <ShopItem key={1} addToCart={setBagItems}/>
+          <ShopItem key={2} addToCart={setBagItems}/> 
         </div>
         <div className='flex-row'>
-          <ShopItem key={3}/>
-          <ShopItem key={4}/>
+          <ShopItem key={3} addToCart={setBagItems}/>
+          <ShopItem key={4} addToCart={setBagItems}/>
         </div>
       </div>
      

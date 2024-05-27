@@ -49,3 +49,11 @@
   .z-index-1{
     z-index: 1;
   }
+
+  .w100perc{
+    width:100%
+  }
+
+  .h100perc{
+    height:100%
+  }
