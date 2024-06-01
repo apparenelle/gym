@@ -59,16 +59,16 @@ function App() {
         className='flex-column'
       >
         <div className='flex-row'>
-          <ShopItem key={1} addToCart={setBagItems}/>
-          <ShopItem key={2} addToCart={setBagItems}/> 
+          <ShopItem key={1} addToCart={setBagItems} itemID={1}/>
+          <ShopItem key={2} addToCart={setBagItems} itemID={1}/> 
         </div>
         <div className='flex-row'>
-          <ShopItem key={3} addToCart={setBagItems}/>
-          <ShopItem key={4} addToCart={setBagItems}/>
+          <ShopItem key={3} addToCart={setBagItems} itemID={1}/>
+          <ShopItem key={4} addToCart={setBagItems} itemID={1}/>
         </div>
       </div>
      
-      <div 
+      {/* <div 
         className='panel1 flex-row jcontent-space-around aitems-center'
       >
         <p>Just Do It.</p>
@@ -76,7 +76,6 @@ function App() {
         <p>SHOP ALL</p>
       </div>
 
-      {/* main page body */}
       <div className='products-page flex-column'>
         <h4>Wellness Product Name</h4>
         <img src={pink_flask} alt="pink water container"/>
@@ -84,7 +83,7 @@ function App() {
         <p>Name of Product</p>
         <p>Description of the product. How it works and functions</p>
 
-      </div>
+      </div> */}
     </div>
   );
 }
